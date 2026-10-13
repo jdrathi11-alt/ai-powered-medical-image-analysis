@@ -646,137 +646,7 @@ prediction response has this general form:
 
 The values above are **format examples only**, not measured results.
 
-## J. GitHub upload strategy
-
-### Recommended repository identity
-
-- **Repository name:** `ai-powered-medical-image-analysis`
-- **Description:** `Educational chest X-ray classification pipeline using public MedMNIST data, TensorFlow/Keras, reproducible evaluation, and visual proof artifacts.`
-- **Suggested topics:** `medical-imaging`, `computer-vision`, `deep-learning`,
-  `tensorflow`, `keras`, `python`, `pneumonia-detection`, `medmnist`,
-  `machine-learning`, `portfolio-project`
-
-### Create and push
-
-After reviewing the files and installing Git:
-
-```bash
-git init
-git branch -M main
-git add .
-git status
-git diff --cached
-git commit -m "chore: initialize medical image analysis project"
-git remote add origin https://github.com/YOUR_USERNAME/ai-powered-medical-image-analysis.git
-git push -u origin main
-```
-
-Use your actual GitHub URL. Never place a GitHub token or password in a file or
-command that will be saved in shell history. If Git asks for credentials, use
-GitHub's supported authentication flow.
-
-### Professional commit strategy
-
-Use small commits that each prove one idea:
-
-```text
-chore: initialize reproducible Python project
-docs: add scope, dataset provenance, and safety boundary
-feat: add MedMNIST data loading and preprocessing
-feat: add compact CNN training workflow
-feat: add test evaluation and visual evidence artifacts
-test: cover label and preprocessing contracts
-docs: add reproducibility and GitHub proof checklist
-```
-
-### Images and videos
-
-- Put reviewed, privacy-safe screenshots in `images/`.
-- Keep large videos in a GitHub release, Git LFS, or an external portfolio link.
-- Do not upload the raw medical dataset or any real patient image.
-- Add captions: command, run date, dataset release, seed, and what the image
-  proves.
-- Link to a short demo video from the README only after checking the link.
-
-## K. README content checklist
-
-This file already contains the core README sections requested for a portfolio:
-
-- overview and safety statement;
-- problem statement and industry relevance;
-- beginner/intermediate/advanced options;
-- selected architecture and data flow;
-- folder structure;
-- Windows and macOS/Linux installation;
-- commands for train/evaluate/predict;
-- file-by-file implementation explanation;
-- public dataset and licensing links;
-- simulation workflow;
-- evaluation and visualization outputs;
-- GitHub upload strategy;
-- seven-day commit and proof plan;
-- final limitations and next steps.
-
-When you have real results, add a small table like this using values copied
-from `outputs/metrics.json`:
-
-| Run | Dataset | Image size | Epochs | Test accuracy | Test AUC | Recall | Notes |
-|---|---|---:|---:|---:|---:|---:|---|
-| `YYYY-MM-DD-seed42` | PneumoniaMNIST | 64 | 20 | `paste` | `paste` | `paste` | CPU/GPU + early stopping |
-
-Do not use placeholder values in a public results table.
-
-## L. Seven-day GitHub proof plan
-
-### Day 1 — Setup
-
-**Commit:** `chore: initialize reproducible Python project`
-
-**Proof:** Python version, environment install, requirements file, passing unit
-tests, folder tree.
-
-### Day 2 — Dataset
-
-**Commit:** `docs: document MedMNIST provenance and data policy`
-
-**Proof:** official dataset link, license citation, label mapping, confirmation
-that data are ignored and not committed.
-
-### Day 3 — Preprocessing
-
-**Commit:** `feat: add deterministic image preprocessing`
-
-**Proof:** sample grid, tensor shape/range test, before/after visualization.
-
-### Day 4 — Model
-
-**Commit:** `feat: add compact CNN baseline`
-
-**Proof:** model summary screenshot, architecture diagram, explanation of the
-sigmoid output and binary cross-entropy.
-
-### Day 5 — Training
-
-**Commit:** `feat: add checkpointed model training`
-
-**Proof:** terminal training log, `history.json`, training/validation curves,
-saved best-model path.
-
-### Day 6 — Evaluation
-
-**Commit:** `feat: add holdout evaluation and error visualizations`
-
-**Proof:** metrics JSON, confusion matrix, correct/error grid, discussion of
-precision vs recall and limitations.
-
-### Day 7 — Upload
-
-**Commit:** `docs: publish reproducible GitHub demo guide`
-
-**Proof:** public repository, polished README, screenshots, demo video or GIF,
-dataset citation, safety statement, and a “how to reproduce” section.
-
-## M. Screenshots, outputs, and demo assets
+## J. Screenshots, outputs, and demo assets
 
 ### Asset list
 
@@ -795,6 +665,7 @@ Generated outputs first appear under `outputs/`. Copy only reviewed and
 privacy-safe assets to `images/`; do not copy the entire output directory or
 model weights without checking size, license, and reproducibility.
 
+
 ### Suggested README image block after a real run
 
 ```markdown
@@ -809,19 +680,9 @@ model weights without checking size, license, and reproducibility.
 | ![Confusion matrix](images/05-confusion-matrix.png) | ![Prediction examples](images/06-predictions.png) |
 ```
 
-### Demo narration
 
-In a 60–90 second demo:
 
-1. Show the repository and the safety disclaimer.
-2. Show the official dataset source and label definition.
-3. Run the smoke command or show the recorded full command.
-4. Open the curves and explain validation checkpointing.
-5. Open the confusion matrix and point out one error type.
-6. Run prediction on an educational sample.
-7. End with limitations and next steps.
-
-## N. Limitations and responsible next steps
+## K. Limitations and responsible next steps
 
 ### Limitations of this student project
 
@@ -874,6 +735,10 @@ After completing this project, a student can explain:
 - Keras `ModelCheckpoint`: <https://keras.io/api/callbacks/model_checkpoint/>
 - Keras `EarlyStopping`: <https://keras.io/api/callbacks/early_stopping/>
 - TensorFlow installation guidance: <https://www.tensorflow.org/install/pip>
+
+## Author
+**Jayesh Rathi** — 3rd Year IT Student, Government College of Engineering, Amravati  
+[LinkedIn](https://www.linkedin.com/in/jayesh-rathi-5ab8973b6) | [Email](mailto:jayeshrathinew@gmail.com)
 
 ## License and data notice
 
