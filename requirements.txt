@@ -1,0 +1,8 @@
+# Recommended: Python 3.11 or 3.12. TensorFlow wheel availability varies by OS/Python version.
+tensorflow>=2.16,<3
+numpy>=1.26,<3
+opencv-python-headless>=4.10,<5
+matplotlib>=3.8,<4
+scikit-learn>=1.4,<2
+Pillow>=10,<12
+pytest>=8,<9
